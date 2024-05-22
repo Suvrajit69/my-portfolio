@@ -4,6 +4,7 @@ import Grid  from "../components/Grid";
 import RecentProjects from "../components/RecentProjects";
 import { FloatingNav } from "../components/ui/FloatingNavbar";
 import { navItems } from "../data";
+import Experience from "../components/Experience";
 
 const page = () => {
   return (
@@ -13,6 +14,7 @@ const page = () => {
         <Hero />
         <Grid />
         <RecentProjects/>
+        <Experience/>
       </div>
     </main>
   );
