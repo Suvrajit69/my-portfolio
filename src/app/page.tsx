@@ -5,6 +5,8 @@ import RecentProjects from "../components/RecentProjects";
 import { FloatingNav } from "../components/ui/FloatingNavbar";
 import { navItems } from "../data";
 import Experience from "../components/Experience";
+import Approach from "../components/Approach";
+import Footer from "../components/Footer";
 
 const page = () => {
   return (
@@ -15,6 +17,8 @@ const page = () => {
         <Grid />
         <RecentProjects/>
         <Experience/>
+        <Approach/>
+        <Footer/>
       </div>
     </main>
   );
