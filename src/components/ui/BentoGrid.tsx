@@ -63,9 +63,39 @@ export const BentoGridItem = ({
     },
   };
 
+  // const handleCopy = () => {
+  //   navigator.clipboard.writeText("suvrajitmondal359@gmail.com");
+  //   setCopied(true);
+  // };
+
   const handleCopy = () => {
-    navigator.clipboard.writeText("suvrajitmondal359@gmail.com");
-    setCopied(true);
+    const email = "suvrajitmondal359@gmail.com";
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(email).then(() => {
+        setCopied(true);
+      }).catch(err => {
+        console.error('Failed to copy: ', err);
+      });
+    } else {
+      console.log("second")
+      // Fallback for older browsers
+      const textArea = document.createElement("textarea");
+      textArea.value = email;
+      textArea.style.position = "fixed";
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+
+      try {
+        document.execCommand('copy');
+        setCopied(true);
+
+      } catch (err) {
+        console.error('Fallback: Oops, unable to copy', err);
+      }
+
+      document.body.removeChild(textArea);
+    }
   };
 
   return (
