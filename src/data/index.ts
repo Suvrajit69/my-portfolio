@@ -187,8 +187,8 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "2+ years of personal coding experiences",
-    desc: "I have been learning web & app development from 2 years. Basically I have expertise in react.js.",
+    title: "2+ years of personal coding experience",
+    desc: "I have been learning web & app development from 2 years. Basically I have expertise in mern stack and react native.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
@@ -219,6 +219,7 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/Suvrajit69"
   },
   // {
   //   id: 2,
@@ -227,5 +228,6 @@ export const socialMedia = [
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/suvrajit-mondal-490130237/"
   },
 ];

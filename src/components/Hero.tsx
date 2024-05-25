@@ -39,9 +39,9 @@ const Hero = () => {
             Hi, I&apos;m Suvrajit
           </p>
           <h2 className="uppercase tracking-widest mb-4 text-xs md:text-sm text-center text-blue-100  max-w-80">
-            A full stack react developer
+            A full stack web developer
           </h2>
-          <a href="/about">
+          <a href="#about">
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}

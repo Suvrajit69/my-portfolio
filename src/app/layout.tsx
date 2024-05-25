@@ -6,7 +6,15 @@ import { ThemeProvider } from "../provider";
 const inter = Inter({subsets: ["latin"]});
 export const metadata: Metadata ={
   title: "Suvrajit's Portfolio",
-  description: "Modern & minimalist Portfolio"
+  description: "Modern & minimalist Portfolio",
+  other:{
+    "theme-color": "#0d1117",
+    "color-scheme": "dark only",
+    // "og:url": "suvrajitmondal.com",
+    "og:url": "my-portfolio-smoky-alpha.vercel.app",
+    "og:image": "https://drive.google.com/uc?export=download&id=1WKA8hGY62mn103VgLOVIxtm44-YOEjP3",
+    "og:type": "website",
+  }
 }
 
 export default function RootLayout({
