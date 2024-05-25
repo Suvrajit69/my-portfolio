@@ -6,7 +6,7 @@ const Experience = () => {
   return (
     <div id="Experience">
       <h1 className="heading">
-        My
+        My{" "}
         <span className="text-purple">Experience</span>
       </h1>
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
