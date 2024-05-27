@@ -98,7 +98,7 @@ export const projects = [
       "/react-router.svg"
 
     ],
-    link: "https://github.com/adrianhajdin/zoom-clone",
+    link: "https://suvrajitcryptocurrencyapp.netlify.app/",
   },
   {
     id: 3,
