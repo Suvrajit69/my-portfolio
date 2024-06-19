@@ -19,7 +19,7 @@ const Footer = () => {
           <span className="text-purple"> digital presence </span>
           <span>to the next level ?</span>
         </h1>
-        <p className="text-white-200 md:mt-10 my-5 text-center">
+        <p className=" md:mt-10 my-5 text-center text-white">
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
         </p>

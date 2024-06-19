@@ -15,7 +15,7 @@ const SpidyWebs: React.FC = () => {
     if (!ctx) return;
 
     let dots: { x: number; y: number; size: number; color: string }[] = [];
-    const arrayColors = ['#eee', '#545454', '#596d91', '#bb5a68', '#696541'];
+    const arrayColors = ['#FFFFFF', '#CCCCCC', '#888888', '#FFD700', '#FF69B4'];
 
     const resizeCanvas = () => {
       canvas.width = container.offsetWidth;
@@ -75,7 +75,7 @@ const SpidyWebs: React.FC = () => {
   }, []);
 
   return (
-    <div className="absolute inset-0  z-40" ref={containerRef}>
+    <div className="absolute inset-0 z-40" ref={containerRef}>
       <canvas ref={canvasRef} className='w-full '></canvas>
     </div>
   );

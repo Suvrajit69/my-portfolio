@@ -221,10 +221,11 @@ export const socialMedia = [
     img: "/git.svg",
     link: "https://github.com/Suvrajit69"
   },
-  // {
-  //   id: 2,
-  //   img: "/twit.svg",
-  // },
+  {
+    id: 2,
+    img: "/twit.svg",
+    link: "https://x.com/suvrajitx",
+  },
   {
     id: 3,
     img: "/link.svg",
