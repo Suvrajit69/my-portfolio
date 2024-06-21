@@ -22,7 +22,7 @@ const SpidyWebs: React.FC = () => {
       canvas.height = container.offsetHeight;
 
       dots = [];
-      for (let index = 0; index < 50; index++) {
+      for (let index = 0; index < 20; index++) {
         dots.push({
           x: Math.floor(Math.random() * canvas.width),
           y: Math.floor(Math.random() * canvas.height),

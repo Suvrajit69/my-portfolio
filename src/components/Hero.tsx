@@ -5,6 +5,7 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
 import SpidyWebs from "./ui/SpidyWebs";
+import ComputerCanvas from "./ui/Computer";
 
 const Hero = () => {
   let width = 0;
@@ -20,18 +21,6 @@ const Hero = () => {
       setScreenWidth(window.innerWidth);
     };
 
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsDotsVisible(false);
-      } else {
-        if (screenWidth < 768) {
-          setIsDotsVisible(false);
-        } else {
-          setIsDotsVisible(true);
-        }
-      }
-    };
-
     const handleMobile = () => {
       if (screenWidth < 768) {
         setIsDotsVisible(false);
@@ -41,18 +30,16 @@ const Hero = () => {
     };
 
     handleMobile();
-    window.addEventListener("scroll", handleScroll);
+
     window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("resize", handleResize);
     };
   }, []);
 
   return (
-    <div className="pb-20 pt-30 relative">
-      {isDotsVisible && <SpidyWebs />}
+    <div className="pb-20 relative">
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen absolute"
@@ -72,20 +59,26 @@ const Hero = () => {
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       </div>
 
-      <div className="flex justify-center relative my-20">
+      <div className="flex justify-center relative my-8">
         <div className="w-full flex flex-col items-center">
-          <TextGenerateEffect
-            className="text-center mx-auto text-[40px] md:text-5xl lg:text-6xl"
-            words="Crafting High-Performance Websites
+          <div className="relative w-full flex flex-col items-center">
+            <TextGenerateEffect
+              className="text-center mx-auto text-[40px] md:text-5xl lg:text-6xl"
+              words="Crafting High-Performance Websites
             with seamless User Experiences & Speed"
-          />
+            />
 
-          <p className="text-center md:tracking-wider mb-2 text-base md:text-lg lg:text-2xl">
-            Hi, I&apos;m Suvrajit
-          </p>
-          <h2 className="uppercase tracking-widest mb-4 text-xs md:text-sm text-center text-blue-100  max-w-80">
-            A full stack web developer
-          </h2>
+            <p className="text-center md:tracking-wider mb-2 text-base md:text-lg lg:text-2xl">
+              Hi, I&apos;m Suvrajit
+            </p>
+            <h2 className="uppercase tracking-widest mb-4 text-xs md:text-sm text-center text-blue-100  max-w-80">
+              A full stack developer
+            </h2>
+            {isDotsVisible && <SpidyWebs />}
+          </div>
+          <div className="h-60 sm:h-80 w-full z-50 ">
+            <ComputerCanvas />
+          </div>
           <a href="#about">
             <MagicButton
               title="Show my work"
