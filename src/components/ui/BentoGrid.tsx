@@ -111,6 +111,7 @@ export const BentoGridItem = ({
             <img
               src={img}
               alt={img}
+              loading="lazy"
               className={cn(imgClassName, "object-cover object-center")}
             />
           )}
@@ -125,6 +126,7 @@ export const BentoGridItem = ({
             <img
               src={spareImg}
               alt={spareImg}
+              loading="lazy"
               className={"object-cover object-center w-full h-full"}
             />
           )}

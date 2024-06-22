@@ -5,7 +5,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 const RecentProjects = () => {
   return (
-    <section id="projects" className="py-20">
+    <section id="projects" className="my-20">
       <h1 className="heading">
         A small selection of my{" "}
         <span className="text-purple">recent projects</span>
@@ -19,9 +19,9 @@ const RecentProjects = () => {
             <PinContainer title={link} href={link}>
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#131626d]">
-                  <img src="/bg.png" alt="bg-img" />
+                  <img src="/bg.png" alt="bg-img" loading="lazy"/>
                 </div>
-                <img src={img} alt={title} className="z-10 absolute bottom-0" />
+                <img src={img} alt={title} loading="lazy" className="z-10 absolute bottom-0" />
               </div>
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1 ">
                 {title}
@@ -38,7 +38,7 @@ const RecentProjects = () => {
                       className="border border-white-100/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
                       style={{ transform: `translateX(-${5 * index * 2}px)` }}
                     >
-                      <img src={icon} alt="icon" className="p-2" />
+                      <img src={icon} alt="icon" className="p-2" loading="lazy" />
                     </div>
                   ))}
                 </div>
