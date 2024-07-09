@@ -89,19 +89,26 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Crypto currency app",
-    des: "A crypto currency coins website, where users can see coins price and charts in different popular currencies.",
-    img: "/cryptoApp.png",
+    title: "React-native social media app",
+    des: "This full stack social media mobile app usig appwrite as a backend. Appwrite is self hosted in aws EC2 instance and usig s3 bucket as files storage. This app is made using expo, expo-router, expo-camera, expo-image-picker. That is why people share their thoughts seamlessly.",
+    img: "/Aora.png",
     iconLists: [
       "/re.svg",
-      "/chakra.svg",
-      "/react-router.svg"
-
+      "/expo.png",
+      "/app.svg",
     ],
-    link: "https://suvrajitcryptocurrencyapp.netlify.app/",
+    link: "https://drive.google.com/file/d/1RMasebukOU2XKAJZwOStpu-wlPRzA7vp/view",
   },
   {
     id: 3,
+    title: "Crypto currency app",
+    des: "A crypto currency coins website, where users can see coins price and charts in different popular currencies.",
+    img: "/cryptoApp.png",
+    iconLists: ["/re.svg", "/chakra.svg", "/react-router.svg"],
+    link: "https://suvrajitcryptocurrencyapp.netlify.app/",
+  },
+  {
+    id: 4,
     title: "Todo app",
     des: "A simple todo app, where users can create board and add todos inside the boards. Also they can do CRUD operation",
     img: "/todo.png",
@@ -219,7 +226,7 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-    link: "https://github.com/Suvrajit69"
+    link: "https://github.com/Suvrajit69",
   },
   {
     id: 2,
@@ -229,6 +236,6 @@ export const socialMedia = [
   {
     id: 3,
     img: "/link.svg",
-    link: "https://www.linkedin.com/in/suvrajit-mondal-490130237/"
+    link: "https://www.linkedin.com/in/suvrajit-mondal-490130237/",
   },
 ];
