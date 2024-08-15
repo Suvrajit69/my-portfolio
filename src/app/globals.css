@@ -88,3 +88,9 @@
   }
 }
 
+.circle{
+  background: linear-gradient(to bottom, purple, blue);
+  filter: blur(50px);
+}
+
+

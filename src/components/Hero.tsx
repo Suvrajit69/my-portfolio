@@ -6,6 +6,7 @@ import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
 import SpidyWebs from "./ui/SpidyWebs";
 import ComputerCanvas from "./ui/Computer";
+import Image from "next/image";
 
 const Hero = () => {
   let width = 0;
@@ -62,16 +63,25 @@ const Hero = () => {
       <div className="flex justify-center relative my-8">
         <div className="w-full flex flex-col items-center">
           <div className="relative w-full flex flex-col items-center">
+            <Image
+              src="/Hero-removedbg.png"
+              width={500}
+              height={500}
+              priority={true}
+              alt="Picture of the author"
+              className="z-0 absolute"
+            />
+            <div className="circle rounded-full z-0 absolute h-36 w-72 md:h-40 md:w-[30rem] bottom-56 md:bottom-0"/>
             <TextGenerateEffect
-              className="text-center mx-auto text-[40px] md:text-5xl lg:text-6xl"
+              className="text-center z-10 mt-48 xs:mt-64 sm:mt-64 text-[40px] md:text-5xl lg:text-6xl"
               words="Crafting High-Performance Websites
             with seamless User Experiences & Speed"
             />
 
-            <p className="text-center md:tracking-wider mb-2 text-base md:text-lg lg:text-2xl">
+            <p className="text-center z-10 md:tracking-wider mb-2 text-base md:text-lg lg:text-2xl">
               Hi, I&apos;m Suvrajit
             </p>
-            <h2 className="uppercase tracking-widest mb-4 text-xs md:text-sm text-center text-blue-100  max-w-80">
+            <h2 className="uppercase z-10 tracking-widest mb-4 text-xs md:text-sm text-center text-blue-100  max-w-80">
               A full stack developer
             </h2>
             {isDotsVisible && <SpidyWebs />}

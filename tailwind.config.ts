@@ -23,6 +23,7 @@ const config = {
       padding: "2rem",
       screens: {
         "2xl": "1400px",
+        "xs": "430px"
       },
     },
     extend: {
@@ -159,6 +160,16 @@ const config = {
         fifth: "moveInCircle 20s ease infinite",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+      },
+      backgroundClip: {
+        text: 'text',
+      },
+      textColor: {
+        transparent: 'transparent',
+      },
+      outline: {
+        light: '5px solid white',
+        dark: '1px solid black',
       },
     },
   },
